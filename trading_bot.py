@@ -6,14 +6,12 @@ from datetime import datetime
 from alpaca_trade_api import REST
 from timedelta import Timedelta
 from finbert_utils import estimate_sentiment
+from dotenv import env
 
-API_KEY = "PKMCM1ME8L1FC0AMCWVI"
-API_SECRET = "frSl1ePObqoWoX2LdLUQu6mpEObSpeJzkYSOtRot"
-BASE_URL = "https://paper-api.alpaca.markets/"
 
 ALPACA_CREDS = {
-    "API_KEY":API_KEY,
-    "API_SECRET":API_SECRET,
+    "API_KEY":env.API_KEY,
+    "API_SECRET":env.API_SECRET,
     "PAPER": True
 }
 
